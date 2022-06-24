@@ -59,6 +59,10 @@ body {
 }
 
 @media (min-width: 992px) {
+    .content {
+        max-width: 960px;
+    }
+
     .signup-form {
         margin: 3rem auto;
     }
