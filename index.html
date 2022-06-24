@@ -7,20 +7,58 @@
     <title>One recipe for everyday</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container vh-100 d-flex justify-content-center align-items-center border">
-        <div class="row justify-content-center">
-            <div class="imageCont col-lg-5 col-md-5 col-sm ">
-                <img class="img-fluid rounded" src="imgs/spices.jpg" alt="Image of spices in spoons">
+    <div class="container container-fluid vh-100 border d-flex justify-content-center align-items-center border">
+        <div class="content d-flex flex-md-row flex-column justify-content-center">
+            <div class="image-cont col-lg-4 col-md-4 col-sm-4">
+                <img class="spice-img img-fluid rounded" src="imgs/spices.jpg" alt="Image of spices in spoons">
             </div>
-            <div class="signupCont rounded border col-lg-6 col-md-7 col-sm">
-                <div class="row">message</div>
-                <div class="row register-form">
-                    form
+            <div class="signup-cont rounded col-lg-6 col-md-6 col-sm-7">
+                <p class="lead text-center my-4">
+                    Welcome to My kimchi is better than yours
+                </p>
+                <p class="small px-2"> Join our service to get an quick and tasty korean food recipe everyday!
+                    There are over 500 recipes that are easy to follow but gives you a good feel of Korean dishes. </p>
+                <div class="signup-form row register-form px-2 my-3 rounded">
+                    <div class="row g-2">
+                        <div class="col">
+                            <input id="fname" type="text" class="form-control" placeholder="First name"
+                                aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input id="lname" type="text" class="form-control" placeholder="Last name"
+                                aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col">
+                            <input id="email" type="email" class="form-control" placeholder="mkby@better.com"
+                                aria-label="Email">
+                        </div>
+                        <div class="col">
+                            <input id="phone" type="tel" class="form-control" placeholder="xxx-xxx-xxxx"
+                                aria-label="Phone number">
+                        </div>
+                    </div>
+                    <div class="row g-2 pb-3">
+                        <div class="col">
+                            <input id="password" type="passowrd" class="form-control" placeholder="Password"
+                                aria-label="Password">
+                        </div>
+                        <div class="col">
+                            <input id="password" type="passowrd" class="form-control" placeholder="Confirm-password"
+                                aria-label="Password">
+                        </div>
+                    </div>
                 </div>
-                <div class="row btns">buttons</div>
+                <div class="row btns">
+                    <button class="join-btn rounded mx-auto my-3" type="submit">Subscribe it</button>
+                    <p class="ms-2 small">Already have an account? <br>
+                        Click <a href="home">here</a> to sign in</p>
+                </div>
             </div>
         </div>
     </div>
