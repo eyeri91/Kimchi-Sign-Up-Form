@@ -34,6 +34,7 @@ body {
 
 .spice-img {
     object-fit: cover;
+
 }
 
 .sign-in {
@@ -66,4 +67,23 @@ body {
     .signup-form {
         margin: 3rem auto;
     }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+.img-cont {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 4rem;
+
 }
