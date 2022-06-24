@@ -46,6 +46,10 @@ body {
     cursor: pointer;
 }
 
+.link:hover {
+    color: rgb(228, 87, 48);
+}
+
 
 @media (max-width: 768) {
     .content {
