@@ -1,10 +1,17 @@
+
+:root {
+    --logo-text:'Lobster';
+    --panel-text: 'Roboto Condensed';
+}
+
 * {
     box-sizing: border-box;
+    font-family: var(--panel-text), sans-serif;
 }
-/* 
-:root {
-    --img-length: calc()
-} */
+
+/*  font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Titan One', cursive; */
 
 body {
     background-color: rgb(246, 244, 242);
@@ -19,6 +26,10 @@ body {
 
 .logo-image {
     width: 64px;
+}
+
+.logo-text{
+    font-family:  var(--logo-text), sans-serif;
 }
 
 .logo-container {
