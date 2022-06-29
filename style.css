@@ -69,15 +69,6 @@ body {
     }
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 500,
-        'GRAD' 0,
-        'opsz' 48
-}
-
-
 .img-cont {
     position: relative;
 }
@@ -101,3 +92,9 @@ body {
 .logo {
     vertical-align: ;
 } */
+
+
+/* Form padding or size adjustment needed */
+/* Logo text hast to be vertically centered */
+
+/* When small screen, the image is cut and the logo is not visible */
