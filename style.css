@@ -6,6 +6,10 @@ body {
     background-color: rgb(246, 244, 242);
 }
 
+.left-image {
+ margin-left:4rem;    
+}
+
 .signup-cont {
     border: 1px solid rgb(211, 209, 209);
     background-color: white;
@@ -33,8 +37,7 @@ body {
 }
 
 .spice-img {
-    object-fit: cover;
-
+    height: 100vh;
 }
 
 .sign-in {
@@ -52,7 +55,7 @@ body {
 }
 
 
-@media (max-width: 768) {
+/* @media (max-width: 768) {
     .content {
         flex-direction: column;
         margin: 2rem auto;
@@ -71,7 +74,7 @@ body {
 
 .img-cont {
     position: relative;
-}
+} */
 
 .logo-image {
     width: 64px;
