@@ -47,6 +47,24 @@ body {
     text-align: center;
 }
 
+.jump {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(193, 65, 65, 0.6);
+    color: var(--btn-text);
+    position: absolute;
+    top: 90%;
+    transition: all 0.3s;
+}
+
+.jump:hover {
+    background-color:var(--btn-hover);
+    color: var(--btn-text);
+}
+
+
 .right-panel {
     max-width: 50vw;
     margin-left: 3%;
