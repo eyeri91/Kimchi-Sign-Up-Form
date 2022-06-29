@@ -6,8 +6,15 @@ body {
     background-color: rgb(246, 244, 242);
 }
 
+
 .left-image {
- margin-left:4rem;    
+ max-width: 45vw;
+ margin-left: 3%; 
+}
+
+.right-panel {
+    max-width: 50vw;
+    margin-left: 3%;
 }
 
 .signup-cont {
@@ -38,6 +45,9 @@ body {
 
 .spice-img {
     height: 100vh;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .sign-in {
@@ -54,6 +64,24 @@ body {
     color: rgb(228, 87, 48);
 }
 
+@media (min-width: 1140px) {
+    .content {
+        justify-content: space-between;
+    }
+    .right-panel {
+        width:50vw;
+    }
+    .lead {
+        font-size: 2rem;
+    }
+    .right-panel > *,
+    .join-btn {
+        margin-bottom: 2rem;
+    }
+    .btns {
+        margin-top: 1.5rem;
+    }
+}
 
 /* @media (max-width: 768) {
     .content {
