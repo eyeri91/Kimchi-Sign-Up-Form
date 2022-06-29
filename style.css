@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+/* 
+:root {
+    --img-length: calc()
+} */
 
 body {
     background-color: rgb(246, 244, 242);
@@ -8,8 +12,24 @@ body {
 
 
 .left-image {
- max-width: 500px;
- margin-left: 3%; 
+ max-width: 100%;
+ /* margin-left: 3%;  */
+ position: relative;
+}
+
+.logo-image {
+    width: 64px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 15;
+    color: rgb(251, 246, 246);
+    position: absolute;
+    top: 20%;
+    background-color: rgba(4, 4, 4, 0.7);
+    text-align: center;
+    font-size: 3.3rem;
 }
 
 .right-panel {
@@ -96,23 +116,12 @@ body {
     .right-panel {
         width:50%;
     }
+    .left-image {
+        max-width: 35vw;
+    }
 }
 
 
-.logo-image {
-    width: 64px;
-}
-
-.logo-container {
-    width: 100%;
-    height: 19%;
-    color: rgb(251, 246, 246);
-    position: absolute;
-    top: 20%;
-    background-color: rgba(4, 4, 4, 0.4);
-    text-align: center;
-    font-size: 3.3rem;
-}
 
 /* 
 .logo {
