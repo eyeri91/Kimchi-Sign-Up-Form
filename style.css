@@ -14,7 +14,6 @@ body {
 
 .right-panel {
     max-width: 50vw;
-    margin-left: 3%;
 }
 
 .signup-cont {
@@ -45,6 +44,8 @@ body {
 
 .spice-img {
     height: 100vh;
+    width: 100%;
+    object-fit:cover;
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -65,11 +66,8 @@ body {
 }
 
 @media (min-width: 1140px) {
-    .content {
-        justify-content: space-between;
-    }
     .right-panel {
-        width:50vw;
+        width:50%;
     }
     .lead {
         font-size: 2rem;
