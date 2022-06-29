@@ -5,6 +5,7 @@
     --descr-text: rgb(111,111,111);
     --sign-in-text: rgb(175, 175, 175); 
     --btn-text:  rgb(247, 245, 243);
+    --btn-hover:rgb(193, 65, 65);
 }
 
 * {
@@ -33,17 +34,17 @@ body {
 
 .logo-text{
     font-family:  var(--logo-text), sans-serif;
+    font-size: 5rem;
 }
 
 .logo-container {
     width: 100%;
-    height: 15;
+    height: 15%;
     color: var(--btn-text);
     position: absolute;
-    top: 20%;
-    background-color: rgba(4, 4, 4, 0.7);
+    top: 15%;
+    background-color: rgba(193, 65, 65, 0.9);
     text-align: center;
-    font-size: 3.3rem;
 }
 
 .right-panel {
@@ -67,7 +68,7 @@ body {
 
 .join-btn {
     border: none;
-    background-color: rgb(233, 164, 164);
+    background-color: rgb(230, 117, 117);
     width: 50%;
     color: var(--btn-text);
     transition: all 0.2s;
@@ -76,7 +77,7 @@ body {
 .join-btn:hover,
 .join-btn:focus {
     color: var(--btn-text);
-    background-color: rgb(193, 65, 65);
+    background-color: var(--btn-hover);
     transform: translateY(-2px);
     /* box-shadow: 0px 2px 5px 1px rgb(214, 102, 102); */
 }
@@ -137,15 +138,3 @@ body {
     }
 }
 
-
-
-/* 
-.logo {
-    vertical-align: ;
-} */
-
-
-/* Form padding or size adjustment needed */
-/* Logo text hast to be vertically centered */
-
-/* When small screen, the image is cut and the logo is not visible */
