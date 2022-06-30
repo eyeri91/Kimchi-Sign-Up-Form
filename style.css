@@ -1,11 +1,10 @@
-
 :root {
-    --logo-text:'Lobster';
+    --logo-text: 'Lobster';
     --panel-text: 'Roboto Condensed';
-    --descr-text: rgb(111,111,111);
-    --sign-in-text: rgb(175, 175, 175); 
-    --btn-text:  rgb(247, 245, 243);
-    --btn-hover:rgb(193, 65, 65);
+    --descr-text: rgb(111, 111, 111);
+    --sign-in-text: rgb(175, 175, 175);
+    --btn-text: rgb(247, 245, 243);
+    --btn-hover: rgb(193, 65, 65);
 }
 
 * {
@@ -23,17 +22,17 @@ body {
 
 
 .left-image {
- max-width: 100%;
- /* margin-left: 3%;  */
- position: relative;
+    max-width: 100%;
+    /* margin-left: 3%;  */
+    position: relative;
 }
 
 .logo-image {
     width: 64px;
 }
 
-.logo-text{
-    font-family:  var(--logo-text), sans-serif;
+.logo-text {
+    font-family: var(--logo-text), sans-serif;
     font-size: 5rem;
 }
 
@@ -48,6 +47,7 @@ body {
 }
 
 .jump {
+    border: none;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -60,7 +60,7 @@ body {
 }
 
 .jump:hover {
-    background-color:var(--btn-hover);
+    background-color: var(--btn-hover);
     color: var(--btn-text);
 }
 
@@ -103,7 +103,7 @@ body {
 .spice-img {
     height: 100vh;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -130,6 +130,7 @@ body {
         margin-left: 0;
         padding: 0;
     }
+
     .lead {
         font-size: 1.8rem;
     }
@@ -140,18 +141,18 @@ body {
 
 }
 
-@media (min-width: 769px) and (max-width: 991.98px) { 
+@media (min-width: 769px) and (max-width: 991.98px) {
     .lead {
         font-size: 1.7rem;
     }
- }
+}
 
 @media (min-width: 1200px) {
     .right-panel {
-        width:50%;
+        width: 50%;
     }
+
     .left-image {
         max-width: 35vw;
     }
 }
-
