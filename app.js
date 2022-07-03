@@ -9,13 +9,21 @@ const inputs = document.querySelectorAll('input');
 const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
 const eWarn = document.querySelector('.email-warning');
+const pWarn = document.querySelector('.pass1-warning');
 const signInLink = document.querySelector('.sign-in-link');
+const invalidSpans = document.querySelectorAll('.invalid');
+
+const upper = document.querySelector('.upper');
+const lower = document.querySelector('.lower');
+const num = document.querySelector('.num');
+const special = document.querySelector('.special');
 
 const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
 const phoneRegex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
+const passRegex = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/);
 
-const valid = "red solid 1px";
-const invalid = "green solid 1px";
+const invalid = "red solid 1px";
+const valid = "green solid 1px";
 
 
 jumpToJoin.addEventListener('click', () => {
@@ -33,40 +41,89 @@ inputs.forEach(input => {
     })
 })
 
+
 function checkInput(e) {
     let info = e.target.value;
     // Check input id and check the value length accordingly.
     if (e.target.id == 'fname') {
         if (info.length < 2) {
-            e.target.style.border = valid;
+            e.target.style.border = invalid;
             fWarn.style.display = 'block';
         } else if (info.length >= 2) {
-            e.target.style.border = invalid;
+            e.target.style.border = valid;
             fWarn.style.display = 'none';
         }
     } else if (e.target.id == 'lname') {
         if (info.length < 3) {
-            e.target.style.border = valid;
+            e.target.style.border = invalid;
             lWarn.style.display = 'block';
         } else if (info.length >= 3) {
-            e.target.style.border = invalid;
+            e.target.style.border = valid;
             lWarn.style.display = 'none';
         }
     } else if (e.target.id == 'email') {
         let isEmailValid = emailRegex.test(info);
         if (!isEmailValid) {
-            e.target.style.border = valid;
+            e.target.style.border = invalid;
             eWarn.style.display = 'block';
         } else if (isEmailValid) {
-            e.target.style.border = invalid;
+            e.target.style.border = valid;
             eWarn.style.display = 'none';
         }
     } else if (e.target.id == 'phone') {
         let isPhoneValid = phoneRegex.test(info);
         if (!isPhoneValid) {
-            e.target.style.border = valid;
-        } else if (isPhoneValid) {
             e.target.style.border = invalid;
+        } else if (isPhoneValid) {
+            e.target.style.border = valid;
+        }
+    } else if (e.target.id == 'password1') {
+        let isPassValid = passRegex.test(info);
+        if (!isPassValid) {
+            e.target.style.border = invalid;
+        } else if (isPassValid) {
+            e.target.style.border = valid;
         }
     }
+}
+
+pass1.addEventListener('input', checkPassword);
+
+function checkPassword() {
+    pWarn.style.display = 'block';
+
+    const cap = new RegExp(/(?=.*[A-Z])/);
+    const small = new RegExp(/(?=.*[a-z])/);
+    const number = new RegExp(/(?=.*\d)/);
+    const speCha = new RegExp(/(?=.*[@$#!%*?&])/);
+
+    let hasCap = cap.test(pass1.value);
+    let hasSmall = small.test(pass1.value);
+    let hasSpecial = speCha.test(pass1.value);
+    let hasNum = number.test(pass1.value);
+
+    if (hasCap) {
+        upper.style.color = 'green';
+    } else {
+        upper.style.color = 'var(--descr-text)';
+    }
+
+    if (hasSmall) {
+        lower.style.color = 'green';
+    } else {
+        lower.style.color = 'var(--descr-text)';
+    }
+
+    if (hasNum) {
+        num.style.color = 'green';
+    } else {
+        num.style.color = 'var(--descr-text)';
+    }
+
+    if (hasSpecial) {
+        special.style.color = 'green';
+    } else {
+        special.style.color = 'var(--descr-text)';
+    }
+
 }
