@@ -126,7 +126,15 @@ body {
 .fname-warning {
     display: none;
     position: relative;
-    /* content: 'Minimum 2 characters'; */
+    font-size: 12px;
+    color: var(--btn-hover);
+    top: 0px;
+    right: -3px;
+}
+
+.lname-warning {
+    display: none;
+    position: relative;
     font-size: 12px;
     color: var(--btn-hover);
     top: 0px;
