@@ -47,10 +47,12 @@
                         <input id="email" type="email" class="form-control" placeholder="mkby@better.com"
                             aria-label="Email" required
                             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                        <span class="email-warning">Invalid email address</span>
                     </div>
                     <div class=" col-12 col-lg-6">
                         <input id="phone" type="tel" class="form-control" placeholder="xxx-xxx-xxxx"
-                            aria-label="Phone number" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}">
+                            aria-label="Phone number" required
+                            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
                     </div>
                 </div>
                 <div class="row g-2 pb-3">

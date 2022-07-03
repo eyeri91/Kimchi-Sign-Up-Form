@@ -8,6 +8,7 @@ const pass2 = document.getElementById('password2');
 const inputs = document.querySelectorAll('input');
 const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
+const eWarn = document.querySelector('.email-warning');
 const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
 const phoneRegex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
 
@@ -50,8 +51,10 @@ function checkInput(e) {
         let isEmailValid = emailRegex.test(info);
         if (!isEmailValid) {
             e.target.style.border = valid;
+            eWarn.style.display = 'block';
         } else if (isEmailValid) {
             e.target.style.border = invalid;
+            eWarn.style.display = 'none';
         }
     } else if (e.target.id == 'phone') {
         let isPhoneValid = phoneRegex.test(info);
