@@ -123,6 +123,16 @@ body {
     color: var(--btn-hover);
 }
 
+.fname-warning::after {
+    display: none;
+    position: relative;
+    content: 'Minimum 2 characters';
+    font-size: 13px;
+    color: var(--btn-hover);
+    top: -5px;
+    right: -3px;
+}
+
 /* 
 input:focus,
 textarea {
