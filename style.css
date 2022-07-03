@@ -46,6 +46,14 @@ body {
     text-align: center;
 }
 
+.copyright {
+    position: absolute;
+    top: 87%;
+    right: 1%;
+    font-size: 0.5rem;
+    color: var(--btn-text)
+}
+
 .jump {
     border: none;
     text-decoration: none;
