@@ -120,8 +120,14 @@ body {
 }
 
 .link:hover {
-    color: rgb(228, 87, 48);
+    color: var(--btn-hover);
 }
+
+/* 
+input:focus,
+textarea {
+    border: 2px sold pink;
+} */
 
 
 
