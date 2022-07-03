@@ -8,6 +8,11 @@ const pass2 = document.getElementById('password2');
 const inputs = document.querySelector('input');
 const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
+const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
+
+const valid = "red solid 1px";
+const invalid = "green solid 1px";
+
 
 
 jumpToJoin.addEventListener('click', () => {
@@ -22,25 +27,35 @@ lname.addEventListener('change', (e) => {
     checkInput(e);
 });
 
+email.addEventListener('change', (e) => {
+    checkInput(e);
+});
+
 function checkInput(e) {
     let info = e.target.value;
     // Check input id and check the value length accordingly.
     if (e.target.id == 'fname') {
         if (info.length < 2) {
-            e.target.style.border = "red solid 1px";
+            e.target.style.border = valid;
             fWarn.style.display = 'block';
         } else if (info.length >= 2) {
-            e.target.style.border = "green solid 1px";
+            e.target.style.border = invalid;
             fWarn.style.display = 'none';
-
         }
     } else if (e.target.id == 'lname') {
         if (info.length < 3) {
-            e.target.style.border = "red solid 1px";
+            e.target.style.border = valid;
             lWarn.style.display = 'block';
         } else if (info.length >= 3) {
-            e.target.style.border = "green solid 1px";
+            e.target.style.border = invalid;
             lWarn.style.display = 'none';
+        }
+    } else if (e.target.id == 'email') {
+        let isEmailValid = emailRegex.test(info);
+        if (!isEmailValid) {
+            e.target.style.border = valid;
+        } else if (isEmailValid) {
+            e.target.style.border = invalid;
         }
     }
 }
