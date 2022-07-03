@@ -131,33 +131,33 @@ body {
     color: var(--btn-hover);
 }
 
-.fname-warning {
+.fname-warning,
+.lname-warning,
+.email-warning,
+.pass1-warning {
     display: none;
     position: relative;
     font-size: 12px;
     color: var(--btn-hover);
     top: 0px;
-    right: -3px;
+    left: 3%;
 }
 
-.lname-warning {
-    display: none;
-    position: relative;
-    font-size: 12px;
+.pass1-warning {
+    top: 2%;
+    left: -5%;
+}
+
+.pass-requirement {
+    color: var(--descr-text);
+    list-style-type: none;
+}
+
+.pass-requirement>li:nth-child(1) {
+    list-style-type: disc;
     color: var(--btn-hover);
-    top: 0px;
-    right: -3px;
 }
 
-
-.email-warning {
-    display: none;
-    position: relative;
-    font-size: 12px;
-    color: var(--btn-hover);
-    top: 0px;
-    right: -3px;
-}
 
 
 /* 
