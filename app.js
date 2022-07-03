@@ -5,10 +5,11 @@ const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 const pass1 = document.getElementById('password1');
 const pass2 = document.getElementById('password2');
-const inputs = document.querySelector('input');
+const inputs = document.querySelectorAll('input');
 const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
 const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
+const phoneRegex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
 
 const valid = "red solid 1px";
 const invalid = "green solid 1px";
@@ -19,17 +20,12 @@ jumpToJoin.addEventListener('click', () => {
     window.scrollTo(0, document.body.scrollHeight);
 })
 
-fname.addEventListener('change', (e) => {
-    checkInput(e);
-});
 
-lname.addEventListener('change', (e) => {
-    checkInput(e);
-});
-
-email.addEventListener('change', (e) => {
-    checkInput(e);
-});
+inputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+        checkInput(e);
+    })
+})
 
 function checkInput(e) {
     let info = e.target.value;
@@ -55,6 +51,13 @@ function checkInput(e) {
         if (!isEmailValid) {
             e.target.style.border = valid;
         } else if (isEmailValid) {
+            e.target.style.border = invalid;
+        }
+    } else if (e.target.id == 'phone') {
+        let isPhoneValid = phoneRegex.test(info);
+        if (!isPhoneValid) {
+            e.target.style.border = valid;
+        } else if (isPhoneValid) {
             e.target.style.border = invalid;
         }
     }
