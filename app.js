@@ -6,6 +6,7 @@ const phone = document.getElementById('phone');
 const pass1 = document.getElementById('password1');
 const pass2 = document.getElementById('password2');
 const inputs = document.querySelector('input');
+const fWarn = document.querySelector('.fname-warning');
 
 
 jumpToJoin.addEventListener('click', () => {
@@ -26,8 +27,11 @@ function checkInput(e) {
     if (e.target.id == 'fname') {
         if (info.length < 2) {
             e.target.style.border = "red solid 1px";
+            fWarn.style.display = 'block';
         } else if (info.length >= 2) {
             e.target.style.border = "green solid 1px";
+            fWarn.style.display = 'none';
+
         }
     } else if (e.target.id == 'lname') {
         if (info.length < 3) {
