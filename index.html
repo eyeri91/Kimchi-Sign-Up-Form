@@ -33,11 +33,12 @@
                 <div class="row g-2">
                     <div class="col-12 col-lg-6">
                         <input id="fname" type="text" class="form-control" placeholder="First name"
-                            aria-label="First name" required>
+                            aria-label="First name" required minlength="2">
+                        <span class="fname-warning"></span>
                     </div>
                     <div class="col-12 col-lg-6">
                         <input id="lname" type="text" class="form-control" placeholder="Last name"
-                            aria-label="Last name" required>
+                            aria-label="Last name" required minlength="3">
                     </div>
                 </div>
                 <div class="row g-2">
@@ -47,7 +48,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <input id="phone" type="tel" class="form-control" placeholder="xxx-xxx-xxxx"
-                            aria-label="Phone number" required>
+                            aria-label="Phone number" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}">
                     </div>
                 </div>
                 <div class="row g-2 pb-3">
