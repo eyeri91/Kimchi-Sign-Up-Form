@@ -9,6 +9,8 @@ const inputs = document.querySelectorAll('input');
 const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
 const eWarn = document.querySelector('.email-warning');
+const signInLink = document.querySelector('.sign-in-link');
+
 const emailRegex = new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/);
 const phoneRegex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
 
@@ -16,9 +18,12 @@ const valid = "red solid 1px";
 const invalid = "green solid 1px";
 
 
-
 jumpToJoin.addEventListener('click', () => {
     window.scrollTo(0, document.body.scrollHeight);
+})
+
+signInLink.addEventListener('click', (e) => {
+    e.preventDefault();
 })
 
 

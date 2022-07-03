@@ -113,13 +113,13 @@ body {
     color: var(--sign-in-text);
 }
 
-.link {
+.sign-in-link {
     text-decoration: none;
     color: rgb(81, 81, 205);
     cursor: pointer;
 }
 
-.link:hover {
+.sign-in-link:hover {
     color: var(--btn-hover);
 }
 
