@@ -134,7 +134,8 @@ body {
 .fname-warning,
 .lname-warning,
 .email-warning,
-.pass1-warning {
+.pass1-warning,
+.pass2-warning {
     display: none;
     position: relative;
     font-size: 12px;

@@ -10,6 +10,7 @@ const fWarn = document.querySelector('.fname-warning');
 const lWarn = document.querySelector('.lname-warning');
 const eWarn = document.querySelector('.email-warning');
 const pWarn = document.querySelector('.pass1-warning');
+const confirmWarn = document.querySelector('.pass2-warning');
 const signInLink = document.querySelector('.sign-in-link');
 const invalidSpans = document.querySelectorAll('.invalid');
 
@@ -84,6 +85,16 @@ function checkInput(e) {
         } else if (isPassValid) {
             e.target.style.border = valid;
         }
+    } else if (e.target.id == 'password2') {
+        let firstPass = pass1.value;
+        let confirm = pass2.value;
+        if (firstPass == confirm) {
+            pass2.style.border = valid;
+            confirmWarn.style.display = 'none';
+        } else {
+            pass2.style.border = invalid;
+            confirmWarn.style.display = 'block';
+        }
     }
 }
 
@@ -127,3 +138,15 @@ function checkPassword() {
     }
 
 }
+
+// pass2.addEventListener('change', comparePassword);
+
+// function comparePassword() {
+//     let firstPass = pass1.value;
+//     let confirm = pass2.value;
+//     if (firstPass == confirm) {
+//         pass2.style.border = valid;
+//     } else {
+//         pass2.style.border = invalid;
+//     }
+// }
