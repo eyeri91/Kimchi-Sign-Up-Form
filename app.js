@@ -13,6 +13,7 @@ const pWarn = document.querySelector('.pass1-warning');
 const confirmWarn = document.querySelector('.pass2-warning');
 const signInLink = document.querySelector('.sign-in-link');
 const invalidSpans = document.querySelectorAll('.invalid');
+const subscribeBtn = document.querySelector('.subscribe');
 
 const upper = document.querySelector('.upper');
 const lower = document.querySelector('.lower');
@@ -36,16 +37,8 @@ signInLink.addEventListener('click', (e) => {
 })
 
 
-inputs.forEach(input => {
-    input.addEventListener('change', (e) => {
-        checkInput(e);
-    })
-})
-
-
 function checkInput(e) {
     let info = e.target.value;
-    // Check input id and check the value length accordingly.
     if (e.target.id == 'fname') {
         if (info.length < 2) {
             e.target.style.border = invalid;
@@ -138,15 +131,3 @@ function checkPassword() {
     }
 
 }
-
-// pass2.addEventListener('change', comparePassword);
-
-// function comparePassword() {
-//     let firstPass = pass1.value;
-//     let confirm = pass2.value;
-//     if (firstPass == confirm) {
-//         pass2.style.border = valid;
-//     } else {
-//         pass2.style.border = invalid;
-//     }
-// }
