@@ -1,3 +1,4 @@
+
 const jumpToJoin = document.querySelector('.jump');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
