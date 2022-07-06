@@ -37,6 +37,11 @@ signInLink.addEventListener('click', (e) => {
     e.preventDefault();
 })
 
+inputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+        checkInput(e);
+    })
+})
 
 function checkInput(e) {
     let info = e.target.value;
