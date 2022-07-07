@@ -37,6 +37,16 @@ signInLink.addEventListener('click', (e) => {
     e.preventDefault();
 })
 
+subscribeBtn.addEventListener('click', checkEmptyField);
+
+function checkEmptyField() {
+    inputs.forEach(input => {
+        if (!input.value) {
+            alert('')
+        }
+    })
+}
+
 inputs.forEach(input => {
     input.addEventListener('change', (e) => {
         checkInput(e);
