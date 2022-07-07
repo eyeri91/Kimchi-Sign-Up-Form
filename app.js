@@ -45,7 +45,7 @@ function checkBeforeSubmit() {
             isFormCompleted = false;
         }
     })
-    if (!isFormCompleted) alert('Opps! You either have not completed the form or put the invalid input!');
+    if (!isFormCompleted) alert("Opps! Some details are invalid or missing. Check again!");
 }
 
 inputs.forEach(input => {
