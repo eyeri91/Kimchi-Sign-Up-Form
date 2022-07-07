@@ -38,11 +38,10 @@ signInLink.addEventListener('click', (e) => {
 })
 
 subscribeBtn.addEventListener('click', checkBeforeSubmit);
-// How to check some of the inputs are incorrect infor when all input values are given?
 function checkBeforeSubmit() {
     let isFormCompleted = true;
     inputs.forEach(input => {
-        if (!input.value) {
+        if (!input.value || input.classList.contains('invalid')) {
             isFormCompleted = false;
         }
     })
