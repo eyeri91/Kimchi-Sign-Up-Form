@@ -37,16 +37,16 @@ signInLink.addEventListener('click', (e) => {
     e.preventDefault();
 })
 
-subscribeBtn.addEventListener('click', checkEmptyField);
-
-function checkEmptyField() {
+subscribeBtn.addEventListener('click', checkBeforeSubmit);
+// How to check some of the inputs are incorrect infor when all input values are given?
+function checkBeforeSubmit() {
     let isFormCompleted = true;
     inputs.forEach(input => {
         if (!input.value) {
             isFormCompleted = false;
         }
     })
-    if (!isFormCompleted) alert('Opps! You have not completed the form!');
+    if (!isFormCompleted) alert('Opps! You either have not completed the form or put the invalid input!');
 }
 
 inputs.forEach(input => {
@@ -59,50 +59,62 @@ function checkInput(e) {
     let info = e.target.value;
     if (e.target.id == 'fname') {
         if (info.length < 2) {
+            e.target.classList.add('invalid');
             e.target.style.border = invalid;
             fWarn.style.display = 'block';
         } else if (info.length >= 2) {
+            e.target.classList.remove('invalid');
             e.target.style.border = valid;
             fWarn.style.display = 'none';
         }
     } else if (e.target.id == 'lname') {
         if (info.length < 3) {
+            e.target.classList.add('invalid');
             e.target.style.border = invalid;
             lWarn.style.display = 'block';
         } else if (info.length >= 3) {
+            e.target.classList.remove('invalid');
             e.target.style.border = valid;
             lWarn.style.display = 'none';
         }
     } else if (e.target.id == 'email') {
         let isEmailValid = emailRegex.test(info);
         if (!isEmailValid) {
+            e.target.classList.add('invalid');
             e.target.style.border = invalid;
             eWarn.style.display = 'block';
         } else if (isEmailValid) {
+            e.target.classList.remove('invalid');
             e.target.style.border = valid;
             eWarn.style.display = 'none';
         }
     } else if (e.target.id == 'phone') {
         let isPhoneValid = phoneRegex.test(info);
         if (!isPhoneValid) {
+            e.target.classList.add('invalid');
             e.target.style.border = invalid;
         } else if (isPhoneValid) {
+            e.target.classList.remove('invalid');
             e.target.style.border = valid;
         }
     } else if (e.target.id == 'password1') {
         let isPassValid = passRegex.test(info);
         if (!isPassValid) {
+            e.target.classList.add('invalid');
             e.target.style.border = invalid;
         } else if (isPassValid) {
+            e.target.classList.remove('invalid');
             e.target.style.border = valid;
         }
     } else if (e.target.id == 'password2') {
         let firstPass = pass1.value;
         let confirm = pass2.value;
         if (firstPass == confirm) {
+            e.target.classList.remove('invalid');
             pass2.style.border = valid;
             confirmWarn.style.display = 'none';
         } else {
+            e.target.classList.add('invalid');
             pass2.style.border = invalid;
             confirmWarn.style.display = 'block';
         }
