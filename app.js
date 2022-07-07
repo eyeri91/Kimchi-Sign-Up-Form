@@ -40,11 +40,13 @@ signInLink.addEventListener('click', (e) => {
 subscribeBtn.addEventListener('click', checkEmptyField);
 
 function checkEmptyField() {
+    let isFormCompleted = true;
     inputs.forEach(input => {
         if (!input.value) {
-            alert('')
+            isFormCompleted = false;
         }
     })
+    if (!isFormCompleted) alert('Opps! You have not completed the form!');
 }
 
 inputs.forEach(input => {
