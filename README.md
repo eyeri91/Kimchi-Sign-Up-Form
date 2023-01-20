@@ -1,12 +1,6 @@
 # Kimchi-Sign-Up-Form
-<<<<<<< HEAD
 
 \# [Live App](https://eyeri91.github.io/Sign-Up-Form/)
-=======
-Sign-Up project from The Odin project
-
- \# [Live App](https://eyeri91.github.io/Kimchi-Sign-Up-Form/)
->>>>>>> b0d04145c0e1a8e3fb146ed7f6d316621b5800ac
 
 **Kimchi sign up form** is a form for the imaginary web site called "My kimchi is better than yours" where they sell various kinds of Kimchi, which is a traditional Korean dish.
 
@@ -20,7 +14,9 @@ Sign-Up project from The Odin project
 
 ## What I mainly focused
 
-My main focus of this project is delivering the most positive user experience possible while consumers are completing a form so that you don't lose future customers for the service.
+As a consumer myself, It hasn’t always been a pleasant experience when signing in to some websites. Having red colored error messages hurriedly appearing on the screen can be very overwhelming.
+
+Therefore, this project was designed sorely in a customer-oriented perspective, delivering the most positive user experience possible. A sign up form should contribute keeping future customers, not losing them.
 
 To acheive this, there are some points that I followed.
 
