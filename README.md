@@ -2,7 +2,7 @@
 
 \# [Live App](https://eyeri91.github.io/Sign-Up-Form/)
 
-**Kimchi sign up form** is a form for the imaginary web site called "My kimchi is better than yours" where they sell various kinds of Kimchi, which is a traditional Korean dish.
+**_Kimchi sign up form_** is a form for the imaginary web site called "My kimchi is better than yours" where they sell various kinds of Kimchi, which is a traditional Korean dish.
 
 ## Learning outcomes
 
@@ -20,17 +20,21 @@ Therefore, this project was designed sorely in a customer-oriented perspective, 
 
 To acheive this, there are some points that I followed.
 
-1. Do not show any invalid message until user leaves to the next input field.
+1. _Do not show any invalid message until user leaves to the next input field._\\
+
    Any alert messages appeared hastly only give stress to users. In that sense, I tried to display any negative feedback at last.
 
-2. Use the least techincal terms in error messages.
+2. _Use the least techincal terms in error messages._\\
+
    As most of users are not tech-oriented, it is important to let them know what went wrong in a easy and simple manner.
 
-3. Show password rules right away.
+3. _Show password rules right away._\\
+
    It became such a hassle to create a long and complicated but also valid passwords for web sites these days. It is important to show the guildline and help them to meet requirements.
 
-4. Help them by showing templates.
-   For example, some input fields can have placeholder filled with valid form of data so that users can have an idea of how to complete each section.
+4._ Help them by showing templates._\\
+
+For example, some input fields can have placeholder filled with valid form of data so that users can have an idea of how to complete each section.
 
 ## About
 
