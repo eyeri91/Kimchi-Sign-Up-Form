@@ -1,6 +1,12 @@
 # Kimchi-Sign-Up-Form
+<<<<<<< HEAD
 
 \# [Live App](https://eyeri91.github.io/Sign-Up-Form/)
+=======
+Sign-Up project from The Odin project
+
+ \# [Live App](https://eyeri91.github.io/Kimchi-Sign-Up-Form/)
+>>>>>>> b0d04145c0e1a8e3fb146ed7f6d316621b5800ac
 
 **Kimchi sign up form** is a form for the imaginary web site called "My kimchi is better than yours" where they sell various kinds of Kimchi, which is a traditional Korean dish.
 
