@@ -20,21 +20,17 @@ Therefore, this project was designed sorely in a customer-oriented perspective, 
 
 To acheive this, there are some points that I followed.
 
-1. _Do not show any invalid message until user leaves to the next input field._\\
-
+1. _Do not show any invalid message until user leaves to the next input field.
    Any alert messages appeared hastly only give stress to users. In that sense, I tried to display any negative feedback at last.
 
-2. _Use the least techincal terms in error messages._\\
-
+2. _Use the least techincal terms in error messages.
    As most of users are not tech-oriented, it is important to let them know what went wrong in a easy and simple manner.
 
-3. _Show password rules right away._\\
-
+3. _Show password rules right away.
    It became such a hassle to create a long and complicated but also valid passwords for web sites these days. It is important to show the guildline and help them to meet requirements.
 
-4._ Help them by showing templates._\\
-
-For example, some input fields can have placeholder filled with valid form of data so that users can have an idea of how to complete each section.
+4._ Help them by showing templates.
+   For example, some input fields can have placeholder filled with valid form of data so that users can have an idea of how to complete each section.
 
 ## About
 
