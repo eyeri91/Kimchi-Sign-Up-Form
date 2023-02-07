@@ -10,7 +10,7 @@
 \# [Sign up to get latest news of MKBY !](https://eyeri91.github.io/Kimchi-Sign-Up-Form/)
   
   
-**_Kimchi sign up form_** is a form for the imaginary web site called "My kimchi is better than yours" where users can subscribe their newsletter to get various kinds of Kimchi and Korean dishes recipes.
+**_Kimchi sign up form_** is a form for the imaginary web site called "My kimchi is better than yours" where users can subscribe their newsletter to get various kinds of Kimchi and Korean food recipes.
   
   
 ## Learning outcomes. 
