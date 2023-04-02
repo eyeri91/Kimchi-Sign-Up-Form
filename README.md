@@ -1,6 +1,18 @@
+<p align="center">
+<img width="1003" alt="Screenshot 2023-01-20 at 8 37 33 PM" src="https://user-images.githubusercontent.com/70323981/213753614-50f311c3-b3fe-4122-9179-7828471f1bf4.png">
+</p> 
+ 
+
+
 # Kimchi-Sign-Up-Form
 
-\# [Live App](https://eyeri91.github.io/Sign-Up-Form/)
+\# [Sign up to get latest news of MKBY !](https://eyeri91.github.io/Kimchi-Sign-Up-Form/)
+
+**_Kimchi sign up form_** is a form for the imaginary web site called "My kimchi is better than yours" where users can subscribe their newsletter to get various kinds of Kimchi and Korean food recipes.
+
+## Learning outcomes.
+
+> > > > > > > 0b02a63940a86edb5fb5a208f5af726ff2b10362
 
 **_Kimchi sign up form_** is a form for the imaginary web site called "My kimchi is better than yours" where they sell various kinds of Kimchi, which is a traditional Korean dish.
 
