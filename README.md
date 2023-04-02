@@ -2,7 +2,7 @@
 <p align="center">
 <img width="1003" alt="Screenshot 2023-01-20 at 8 37 33 PM" src="https://user-images.githubusercontent.com/70323981/213753614-50f311c3-b3fe-4122-9179-7828471f1bf4.png">
 </p> 
-  Cancel changes
+ 
   
 
 # Kimchi-Sign-Up-Form
